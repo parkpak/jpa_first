@@ -1,0 +1,5 @@
+rootProject.name = 'jpa'
+include 'jpa-web'
+include 'jpa-api'
+include 'jpa-common'
+

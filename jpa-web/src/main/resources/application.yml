@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+
+  database: mariadb
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/jpa?autoReconnect=true
+    username: root
+    password:
+
+  hibernate:
+    ddl-auto: update
+
+logging:
+  level:
+    com:
+      example:
+        jpa: debug
